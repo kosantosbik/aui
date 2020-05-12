@@ -45,10 +45,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   NFS="n"
   READAHEAD="n"
   SAMBA="n"
-  SSH="n"
+  SSH="y"
   TLP="n"                # Laptop Power Manager
   ZRAM="n"
-  ZSH="n"
+  ZSH="y"
   OH_MY_ZSH="n"
   BETTER_VIDEO_DRIVER="y" # NVIDIA/AMDGPU
   FONTCONFIG="y"
@@ -67,7 +67,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     # 11) libmtp [Android Devices]
     # 12) libraw1394 [IEE1394 Driver]
     # 13) wd719x-firmware
-    FIRMWARE_OPTIONS=""
+    FIRMWARE_OPTIONS="1 2 13"
   #}}}
 #}}}
 #DESKTOP ENVIRONMENT|WINDOW MANAGER {{{
@@ -86,7 +86,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   # 13) i3-Gaps
   # 14) OpenBox
   # 15) Xmonad
-  DESKTOPENV="4"
+  DESKTOPENV="5"
   #KDE {{{
     # 1) Choqok
     # 2) Digikam
@@ -95,7 +95,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     # 5) latte-dock
     # 6) Skrooge
     # 7) Yakuake
-    KDE_OPTIONS="1 2 3 6 7"
+    KDE_OPTIONS=""
   #}}}
   #ESSENTIAL APPS [Enlightenment,LXDE,Awesome,Fluxbox,OpenBox] {{{
     #  1) Display Manager
@@ -111,7 +111,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     # 11) Xcompmgr
     # 12) Zathura
     # 13) speedtest-cli
-    MISCAPPS="1 3"
+    MISCAPPS="1 3 5 13"
   #}}}
   #DISPLAY MANAGER {{{
     # 1) Entrance
@@ -121,7 +121,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     # 5) Slim
     # 6) lxdm
     # 7) lxdm-gtk
-    DISPLAY_MANAGER="3"
+    DISPLAY_MANAGER="4"
   #}}}
   # 1) Icons Themes
   # 2) GTK2|GTK3 Themes
@@ -159,8 +159,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   # 3) ConnMan
   # n) None
   NETWORKMANAGER="1"
-  USBMODEM="y" #USB 3G MODEM SUPPORT
-  BLUETOOTH="y" #BLUETOOTH SUPPORT
+  USBMODEM="n" #USB 3G MODEM SUPPORT
+  BLUETOOTH="n" #BLUETOOTH SUPPORT
 #}}}
 #ACCESSORIES {{{
   #  1) Albert
@@ -174,7 +174,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   #  9) Synapse
   # 10) Terminator
   # 11) Tilix
-  ACCESSORIES_OPTIONS="4 11"
+  ACCESSORIES_OPTIONS="1 3 11"
 #}}}
 #DEVELOPEMENT {{{
   #  1) Atom
@@ -203,7 +203,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   # 24) Postman
   # 25) Gitkraken
   # 26) FreeCad
-  DEVELOPMENT_OPTIONS="18"
+  DEVELOPMENT_OPTIONS="2 17 19 20 24"
 #}}}
 #OFFICE {{{
   #  1) Abiword+Gnumeric|Calligra
@@ -217,7 +217,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   #  9) Tellico
   # 10) Typora
   # 11) Xmind
-  OFFICE_OPTIONS="6"
+  OFFICE_OPTIONS="5 6"
 #}}}
 #SYSTEM TOOLS {{{
   #  1) ClamAV
@@ -238,7 +238,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   # 16) netdata
   # 17) nload
   # 18) vmware-workstation 12
-  SYSTEMTOOLS_OPTIONS="12 14"
+  SYSTEMTOOLS_OPTIONS="6 9"
 #}}}
 #GRAPHICS {{{
   #  1) Blender
@@ -253,7 +253,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   # 10) Shotwell
   # 11) Simple Scan
   # 12) YACReader
-  GRAPHICS_OPTIONS="2 3 4 6 10"
+  GRAPHICS_OPTIONS="2 7 8"
 #}}}
 #INTERNET {{{
   # 1) Browser
@@ -272,7 +272,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     # 6) Vivaldi
     # 7) Tor-browser
     # 8) Brave
-    BROWSERS_OPTIONS="3"
+    BROWSERS_OPTIONS="2 3 5"
   #}}}
   #DOWNLOAD|FILESHARE {{{
     #  1) Deluge
@@ -292,12 +292,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     # 15) Youtube-dl
     # 16) Megasync
     # 17) Extreme Download Manager
-    DOWNLOAD_OPTIONS="13"
+    DOWNLOAD_OPTIONS="7 15"
   #}}}
   #EMAIL|RSS {{{
     # 1) Liferea
     # 2) Thunderbird
-    EMAIL_OPTIONS=""
+    EMAIL_OPTIONS="2"
   #}}}
   #IM|IRC {{{
     #  1) HexChat|Konversation
@@ -314,7 +314,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     # 12) Slack
     # 13) VK Messanger
     # 14) Zoom.us
-    IM_OPTIONS="5"
+    IM_OPTIONS="5 11"
   #}}}
   #MAPPING {{{
     # 1) Anydesk
@@ -325,7 +325,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   #VNC|Desktop Share {{{
     # 1) Remmina
     # 2) Teamviewer
-    VNC_OPTIONS=""
+    VNC_OPTIONS="2"
   #}}}
 #}}}
 #AUDIO {{{
@@ -346,14 +346,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     # 10) Spotify
     # 11) Timidity++
     # 12) quodlibet
-    AUDIO_PLAYER_OPTIONS="9"
+    AUDIO_PLAYER_OPTIONS="10"
   #}}}
   #EDITORS|TOOLS {{{
     # 1) Audacity
     # 2) Easytag
     # 3) OcenAudio
     # 4) Soundconverter|Soundkonverter
-    AUDIO_EDITOR_OPTIONS="2"
+    AUDIO_EDITOR_OPTIONS=""
   #}}}
 #}}}
 #VIDEO {{{
@@ -372,7 +372,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     #  8) Popcorn Time
     #  9) VLC
     # 10) Kodi
-    VIDEO_PLAYER_OPTIONS="8"
+    VIDEO_PLAYER_OPTIONS="5"
   #}}}
   #EDITORS|TOOLS {{{
     # 1) Arista
@@ -384,7 +384,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     # 7) Openshot
     # 8) Pitivi
     # 9) Transmageddon
-    VIDEO_EDITOR_OPTIONS="8"
+    VIDEO_EDITOR_OPTIONS="5"
   #}}}
 #}}}
 #GAMES {{{
@@ -400,7 +400,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   # 2) LAPP - APACHE, POSTGRESQL & PHP
   # 3) LEMP - NGINX, MariaDB & PHP
   # 4) LEPP - NGINX, POSTGRESQL & PHP
-  WEBSERVER="4"
+  WEBSERVER=""
   POSTGIS="n"
 #}}}
 #FONTS {{{
@@ -416,7 +416,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   # 10) noto-fonts-cjk
   # 11) nerd-fonts-complete
   # 12) Yanc
-  FONTS_OPTIONS="1-9"
+  FONTS_OPTIONS="1-9 11"
 #}}}
 #IME INPUT TOOLS  {{{
   # 1) fcitx
